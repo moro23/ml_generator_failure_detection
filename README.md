@@ -1,1 +1,1 @@
-# ml_generator_failure_detection
+# Generator Failure Detection Project
