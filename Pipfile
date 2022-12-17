@@ -12,6 +12,7 @@ matplotlib = "*"
 seaborn = "*"
 scikit-learn = "*"
 xgboost = "*"
+skops = "*"
 
 [dev-packages]
 
