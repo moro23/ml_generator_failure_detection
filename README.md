@@ -42,3 +42,9 @@ It is given that the cost of repairing a generator is much less than the cost of
 
 - Starting Notebook
     - jupyter-notebook
+
+- Starting the flask web service
+    - python predict.py
+
+- Testing the deployed flast web service
+    - python generator_prediction_serving.py 
