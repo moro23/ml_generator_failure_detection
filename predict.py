@@ -73,8 +73,7 @@ def predict():
     generator_sample = request.get_json()
 
     prediction = predict_generator_failure_single(generator_sample, stdc, model)
-    print(f'Prediction: {round(prediction, 2)}')
-
+    
     if prediction >= 0.5:
         return jsonify(f'Prediction: {round(prediction,2)}, Verdict: Failure')
     else:
