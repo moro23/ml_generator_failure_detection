@@ -1,6 +1,7 @@
 ## import libraries
 import requests
 
+## sample data of a generator with all the features / attributes
 generator_sample = {
 'V1' : -0.613488805,
 'V2' : -3.819639825,
