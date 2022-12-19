@@ -13,6 +13,9 @@ seaborn = "*"
 scikit-learn = "*"
 xgboost = "*"
 skops = "*"
+flask = "*"
+requests = "*"
+gunicorn = "*"
 
 [dev-packages]
 
