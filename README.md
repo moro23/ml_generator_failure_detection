@@ -44,7 +44,22 @@ It is given that the cost of repairing a generator is much less than the cost of
     - jupyter-notebook
 
 - Starting the flask web service
+    - Install the flask library
+        - pipenv install Flask
     - python predict.py
 
 - Testing the deployed flast web service
     - python generator_prediction_serving.py 
+
+- Running the deployed app with Gunicorn
+    - Installing the Gunicorn library
+        - pipenv install gunicorn
+
+    - pipenv run gunicorn --bind 0.0.0.0:9696 predict:app
+
+- Starting Docker service on Linux (fedora)
+    - sudo systemctl start docker
+- Building the dockerized contained
+    - docker build -t generator-failure-prediction . 
+- Using the image to start a docker container
+    - docker run -it -p 9696:9696 generator-failure-prediction:latest
